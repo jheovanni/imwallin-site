@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I'm wallin? — Dev0nti's official soundboard + camera app</title>
+<meta name="description" content="The soundboard and camera from Dev0nti's stream. Play the clips anywhere, text them to friends, and put the stream filters on your photos. Free on the App Store.">
+<meta property="og:title" content="I'm wallin? — the app">
+<meta property="og:description" content="Dev0nti's soundboard + Wallin cam. Out now on iPhone.">
+<meta property="og:image" content="aloha-square.png">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  html{background:#0E0E10}
+  body{margin:0;background:#0E0E10;color:#EFEFF1;font-family:"Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#BF94FF}a:hover{color:#fff}
+  @keyframes w-spin{to{transform:rotate(360deg)}}
+</style>
+<style>
+  html{scroll-behavior:smooth}
+  [data-h="1"]:hover{background:#772CE8 !important}
+  [data-h="2"]:hover{background:#DEDEE3 !important}
+  [data-h="3"]:hover{background:#772CE8 !important}
+  @media (max-width:640px){nav a[href="#features"],nav a[href="#plus"]{display:none}}
+</style>
+</head>
+<body>
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#0E0E10;font-family:'Inter Tight',system-ui,sans-serif">
+
+  <header style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px clamp(20px,5vw,56px);border-bottom:1px solid #2F2F35;background:#18181B">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff">
+      <img src="app-icon.png" alt="" style="width:40px;height:40px;border-radius:10px;display:block">
+      <span style="font-size:20px;font-weight:900;letter-spacing:-.01em">I'm wallin?</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:22px">
+      <a href="#features" style="font-size:14px;font-weight:800;color:#DEDEE3;text-decoration:none">Features</a>
+      <a href="#plus" style="font-size:14px;font-weight:800;color:#DEDEE3;text-decoration:none">Wallin Plus</a>
+      <a href="#download" style="font-size:14px;font-weight:900;color:#fff;background:#9147FF;padding:10px 16px;border-radius:6px;text-decoration:none" data-h="1">Get the app</a>
+    </nav>
+  </header>
+
+  <main id="top" style="flex:1;display:flex;flex-direction:column">
+
+    <section style="position:relative;overflow:hidden;padding:clamp(56px,9vw,120px) clamp(20px,5vw,56px) clamp(48px,7vw,96px)">
+      <div style="position:absolute;inset:0;background:radial-gradient(60% 55% at 15% 0%,rgba(145,71,255,.5),transparent 70%),radial-gradient(45% 45% at 100% 100%,rgba(92,22,197,.35),transparent 70%);pointer-events:none"></div>
+      <div style="position:relative;max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+        <div style="display:flex;flex-direction:column;gap:26px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="display:flex;align-items:center;gap:7px;background:#EB0400;color:#fff;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:4px 9px;border-radius:4px"><span style="width:7px;height:7px;border-radius:50%;background:#fff"></span>Live</span>
+            <span style="font-size:14px;font-weight:700;color:#ADADB8">Dev0nti's official app, out now on iPhone</span>
+          </div>
+          <h1 style="margin:0;font-size:clamp(64px,10vw,132px);font-weight:900;line-height:.86;letter-spacing:-.05em;color:#fff;text-shadow:0 10px 0 rgba(145,71,255,.55)">i'm<br>wallin?</h1>
+          <p style="margin:0;font-size:clamp(18px,2vw,22px);line-height:1.4;color:#DEDEE3;font-weight:600;max-width:520px;text-wrap:pretty">The soundboard and camera from the stream. Play the clips anywhere, text them to your friends, and put the stream filters on your own photos.</p>
+          <div id="download" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px">
+            <a href="#appstore" style="display:flex;align-items:center;gap:12px;background:#fff;color:#0E0E10;border-radius:10px;padding:12px 20px;text-decoration:none" data-h="2">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.8c.02 2.4 2.1 3.2 2.13 3.21-.02.06-.34 1.15-1.1 2.27-.67.97-1.36 1.94-2.45 1.96-1.07.02-1.42-.64-2.64-.64-1.23 0-1.61.62-2.63.66-1.05.04-1.85-1.05-2.53-2.02-1.37-1.98-2.42-5.6-1.01-8.04.7-1.21 1.95-1.98 3.3-2 1.03-.02 2.01.7 2.64.7.63 0 1.81-.86 3.05-.73.52.02 1.98.21 2.92 1.58-.08.05-1.74 1.02-1.72 3.05zM14.3 6.9c.56-.68.94-1.62.84-2.56-.81.03-1.79.54-2.37 1.22-.52.6-.98 1.56-.85 2.48.9.07 1.82-.46 2.38-1.14z"></path></svg>
+              <span style="display:flex;flex-direction:column;line-height:1.05"><span style="font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;opacity:.7">Download on the</span><span style="font-size:20px;font-weight:900">App Store</span></span>
+            </a>
+            <span style="font-size:13px;font-weight:700;color:#ADADB8">Free to download · 2 clips free, the rest with Wallin Plus</span>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center">
+          <div style="position:relative;width:min(100%,340px);aspect-ratio:1;border-radius:28px;background:#fff;padding:12px;box-sizing:border-box;box-shadow:24px 24px 0 #0E0E10,24px 24px 0 1px #2F2F35">
+            <img src="aloha-square.png" alt="Dev0nti in pineapple shades" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;border-radius:18px;display:block">
+            <div style="position:absolute;left:50%;bottom:-10px;transform:translateX(-50%) rotate(-3deg);background:#9147FF;color:#fff;border:3px solid #fff;border-radius:12px;padding:8px 18px;font-size:22px;font-weight:900;white-space:nowrap;box-shadow:6px 6px 0 #0E0E10">i'm wallin?</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" style="padding:clamp(48px,7vw,96px) clamp(20px,5vw,56px);border-top:1px solid #2F2F35">
+      <div style="max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#BF94FF">What's inside</div>
+          <h2 style="margin:0;font-size:clamp(30px,4vw,44px);font-weight:900;letter-spacing:-.02em;color:#fff;line-height:1.05">Two ways to take the stream with you</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px">
+          <div style="background:#18181B;border:1px solid #2F2F35;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px">
+            <div style="width:52px;height:52px;border-radius:14px;background:#9147FF;color:#fff;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div>
+            <h3 style="margin:0;font-size:24px;font-weight:900;color:#fff">Soundboard</h3>
+            <p style="margin:0;font-size:16px;line-height:1.5;color:#ADADB8;font-weight:600;text-wrap:pretty">Eight clips from the stream, from "i'm wallin?" to "Standing on business." Tap to play, hit Text it to send one to a friend, or add the home screen widget for one-tap chaos.</p>
+          </div>
+          <div style="background:#18181B;border:1px solid #2F2F35;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px">
+            <div style="width:52px;height:52px;border-radius:14px;background:#EB0400;color:#fff;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>
+            <h3 style="margin:0;font-size:24px;font-weight:900;color:#fff">Wallin cam</h3>
+            <p style="margin:0;font-size:16px;line-height:1.5;color:#ADADB8;font-weight:600;text-wrap:pretty">Snap a photo, then swipe between the "i'm wallin?" and "you NOT wallin" stream filters. Save it or share it straight to the chat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plus" style="padding:clamp(48px,7vw,96px) clamp(20px,5vw,56px);border-top:1px solid #2F2F35;background:#18181B">
+      <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <img src="profile-circle.png" alt="" style="width:36px;height:36px;border-radius:50%;border:2px solid #9147FF;display:block">
+            <span style="background:#9147FF;color:#fff;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:3px">Plus</span>
+          </div>
+          <h2 style="margin:0;font-size:clamp(30px,4vw,44px);font-weight:900;letter-spacing:-.02em;color:#fff;line-height:1.05">Wallin Plus unlocks every sound</h2>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#ADADB8;font-weight:600;text-wrap:pretty">"i'm wallin?" and "BBC i'm wallin?" are free for everyone. Wallin Plus opens the rest of the board, Shuffle, and every future sound Dev0nti drops, at no extra cost.</p>
+          <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#EFEFF1"><span style="width:20px;height:20px;border-radius:50%;background:#9147FF;color:#fff;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>All 8 sounds, unlocked</li>
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#EFEFF1"><span style="width:20px;height:20px;border-radius:50%;background:#9147FF;color:#fff;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Every future sound included</li>
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#EFEFF1"><span style="width:20px;height:20px;border-radius:50%;background:#9147FF;color:#fff;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Shuffle all sounds</li>
+          </ul>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="position:relative;border:2px solid #9147FF;background:#1F1A2E;border-radius:14px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+            <div style="position:absolute;top:-11px;left:16px;background:#00F593;color:#0E0E10;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:4px">Save 20% · 3-day free trial</div>
+            <div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:20px;font-weight:900;color:#fff">Yearly</span><span style="font-size:14px;font-weight:600;color:#ADADB8">Free for 3 days, then $47.99 / year</span></div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;flex:none"><span style="font-size:22px;font-weight:900;color:#fff">$4.00<span style="font-size:13px;color:#ADADB8;font-weight:700"> /mo</span></span><span style="font-size:13px;font-weight:700;color:#ADADB8;text-decoration:line-through">$4.99</span></div>
+          </div>
+          <div style="border:2px solid #2F2F35;background:#0E0E10;border-radius:14px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+            <div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:20px;font-weight:900;color:#fff">Monthly</span><span style="font-size:14px;font-weight:600;color:#ADADB8">$4.99 / month, cancel anytime</span></div>
+            <span style="font-size:22px;font-weight:900;color:#fff;flex:none">$4.99<span style="font-size:13px;color:#ADADB8;font-weight:700"> /mo</span></span>
+          </div>
+          <p style="margin:4px 0 0;font-size:12px;line-height:1.5;color:#8C8C99;font-weight:600;text-wrap:pretty">Prices in USD. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Manage in Settings › Apple ID › Subscriptions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:clamp(56px,8vw,110px) clamp(20px,5vw,56px);border-top:1px solid #2F2F35;position:relative;overflow:hidden">
+      <div style="position:absolute;inset:0;background:radial-gradient(50% 60% at 50% 100%,rgba(145,71,255,.4),transparent 70%);pointer-events:none"></div>
+      <div style="position:relative;max-width:720px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px">
+        <div style="position:relative;width:88px;height:88px">
+          <div style="position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(#9147FF,#BF94FF,#5C16C5,#9147FF);animation:w-spin 7s linear infinite"></div>
+          <img src="profile-circle.png" alt="Dev0nti" style="position:absolute;inset:0;width:100%;height:100%;border-radius:50%;border:4px solid #0E0E10;box-sizing:border-box;display:block;object-fit:cover">
+        </div>
+        <h2 style="margin:0;font-size:clamp(34px,5vw,56px);font-weight:900;letter-spacing:-.03em;color:#fff;line-height:1">Chat, this one's for you.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.5;color:#ADADB8;font-weight:600;max-width:520px;text-wrap:pretty">Download the app, spam the sounds, post the filters, and tag @dev0nti so he sees it.</p>
+        <a href="#appstore" style="display:flex;align-items:center;gap:12px;background:#9147FF;color:#fff;border-radius:10px;padding:14px 24px;text-decoration:none;font-size:18px;font-weight:900" data-h="3">Download on the App Store</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid #2F2F35;background:#18181B;padding:26px clamp(20px,5vw,56px)">
+    <div style="max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="app-icon.png" alt="" style="width:28px;height:28px;border-radius:7px;display:block">
+        <span style="font-size:13px;font-weight:700;color:#ADADB8">© 2026 Dev0nti · I'm wallin?</span>
+      </div>
+      <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:20px">
+        <a href="terms.html" style="font-size:13px;font-weight:800;color:#DEDEE3;text-decoration:none">Terms of Use</a>
+        <a href="privacy.html" style="font-size:13px;font-weight:800;color:#DEDEE3;text-decoration:none">Privacy Policy</a>
+        <a href="https://instagram.com/dev0nti" style="font-size:13px;font-weight:800;color:#DEDEE3;text-decoration:none">Instagram</a>
+        <a href="https://twitch.tv/dev0nti" style="font-size:13px;font-weight:800;color:#DEDEE3;text-decoration:none">Twitch</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
